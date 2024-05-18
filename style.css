@@ -1,0 +1,101 @@
+body {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: solid;
+    border-radius: 50px;
+    background: #141313;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #d65713, #d3d3d3);  Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0b8793, #d0590a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    }
+    
+    #timer{
+        font-size: 7rem;
+        font-weight: 300px;
+        text-shadow: 2px 2px #5f5f56;
+        color: #ede3e3;
+        width: 500px;
+        text-align: center;
+        margin: 40px auto;
+    }
+    
+    #buttons{
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    button{
+        font-family: 'Nunito', sans-serif;
+        background-color: #848eeb;
+        color: #0c0f0e;
+        border: none;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 1.5rem 4rem;
+        margin: 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 2px 2px 10px rgba(80, 80, 80, 0.632);
+        transition: all .2s;
+    }
+    
+    button:hover{
+        background-color: #d46713;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    button[disabled]{
+        opacity: .5;
+        cursor: default;
+    }
+    #start:active{
+        background-color: antiquewhite;
+
+    }
+    #start:active{
+        background-color: antiquewhite;
+
+    }
+    #stop:active{
+        background-color: antiquewhite;
+
+    }
+    
+     #reset:active{
+        background-color: antiquewhite;
+     }
+     #watch{
+        background-color: antiquewhite;
+        font-size: 5rem;
+        font-weight: bold ;
+        color: #060606;
+        width: 400px;
+        text-align: center;
+        margin-top: 80px;
+        margin: 80px auto;
+     }
+    
+    @media (max-width: 800px) {
+        #timer{
+            font-size: 4rem;
+            width: 350px;
+        }
+    
+        button {
+            font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+            padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1200 - 320)));
+        }
+    }
+    
+    
+    /* @bycapwan */
+    
